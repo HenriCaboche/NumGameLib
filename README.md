@@ -24,3 +24,7 @@
 
 ```python
 import numgamelib as ng
+```
+## ℹ️ Information
+
+- Making your player smaller will reduce the flicker
