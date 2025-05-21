@@ -34,13 +34,13 @@ def create_player(pos_x_o=int, pos_y_o=int,height=int,width=int,velocity_x=int,v
     velocity_y =velocity_y
     pos_x=pos_x_o
     pos_y=pos_y_o
-    #handles inputs
+    # Main loop
     while True:
         kandinsky.fill_rect(pos_x,pos_y,width,height,colour)
         if ion.keydown(ion.KEY_LEFT):
-            #screen refresh
+            # Screen refresh
             kandinsky.fill_rect(pos_x,pos_y,width,height, backround_col)
-            #
+            # Input handler
             pos_x-= velocity_x
         elif ion.keydown(ion.KEY_RIGHT):
             kandinsky.fill_rect(pos_x,pos_y,width,height, backround_col)
