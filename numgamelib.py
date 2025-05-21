@@ -53,3 +53,5 @@ def create_player(pos_x_o=int, pos_y_o=int,height=int,width=int,velocity_x=int,v
         elif ion.keydown(ion.KEY_DOWN):
             kandinsky.fill_rect(pos_x,pos_y,width,height, backround_col)
             pos_y+= velocity_y
+def create_object (posX=int,posY=int,Width=int,Height=int,color=any):
+    kandinsky.fill_rect(posX,posY,Width,Height,color)
