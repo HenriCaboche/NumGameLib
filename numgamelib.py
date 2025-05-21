@@ -29,9 +29,11 @@ def gravity(velocityY,gravityStrenght):
     velocityY -= 1 * gravityStrenght
 
 ## Creates player objects
-def create_player(pos_x_o=int, pos_y_o=int,height=int,width=int,velocity_x=int,velocity_y=int,colour=any,backround_col=any):
+def create_player(pos_x_o=int, pos_y_o=int,height=int,width=int,velocity_x=int,velocity_y=int,colour=any,backround_col=any,isGravity=bool,playerGravityStrenght=int):
     velocity_x= velocity_x
     velocity_y =velocity_y
+    if isGravity:
+        gravity(playerGravityStrenght)
     pos_x=pos_x_o
     pos_y=pos_y_o
     # Main loop
