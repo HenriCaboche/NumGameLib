@@ -19,3 +19,6 @@ def create_active(pos_x_o=int, pos_y_o=int,height=int,width=int,velocity_x=int,v
             kandinsky.fill_rect(pos_x,pos_y,width,height, backround_col)
             pos_x+=pos_x+velocity_x
             pos_y+=velocity_y
+
+def gravity(velocityY,gravityStrenght):
+    velocityY -= 1 * gravityStrenght
